@@ -3,6 +3,7 @@ module etcd
 go 1.19
 
 require (
+	github.com/emicklei/proto v1.11.2
 	github.com/stretchr/testify v1.8.1
 	github.com/urfave/cli/v2 v2.25.3
 	go.etcd.io/etcd/client/v3 v3.5.9

@@ -9,10 +9,14 @@
 package main
 
 func init() {
-	grpcDir := &GrpcGenerator{}
+	//grpcDir := &GrpcGenerator{}
+	//ctrlDir := &CtrlGenerator{}
 	//dir := &DirGenerator{
 	//	dirList: AllDirList,
 	//}
+	m := &MainGenerator{}
 	//Register("dir generator", dir)
-	Register("grpc generator", grpcDir)
+	//Register("grpc generator", grpcDir)
+	//Register("controller generator", ctrlDir)
+	Register("main generator", m)
 }
