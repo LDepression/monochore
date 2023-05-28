@@ -1,0 +1,14 @@
+syntax = "proto3";
+option go_package = "./;generate"; //这里的package其实就是hrllo.pb.go和hrllo_grpc.pb.go的package
+package hello;
+
+message HelloRequest{
+  string name =1;
+}
+message HelloResponse{
+  string reply  =1;
+}
+
+service HelloService {
+  rpc SayHello(HelloRequest) returns (HelloResponse){}
+}
